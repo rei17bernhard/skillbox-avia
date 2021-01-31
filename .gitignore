@@ -1,0 +1,7 @@
+node_modules
+.cache
+dist
+universal-win32-x64
+www
+.gradle
+android

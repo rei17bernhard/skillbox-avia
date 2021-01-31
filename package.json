@@ -1,0 +1,28 @@
+{
+  "name": "skillbox-avia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "parcel serve src/index.html --public-url ./",
+    "build": "parcel build src/index.html --out-dir=www --public-url ./",
+    "ionic:build": "parcel build src/index.html --out-dir=www --public-url ./",
+    "ionic:serve": "parcel serve src/index.html --out-dir=www --public-url ./",
+    "serve:android": "ionic cap run android -l --external --host=192.168.1.103",
+    "electron:serve": "electron serve.js",
+    "electron:build": "electron-packager . universal --overwrite --ignore=\"(node_modules|src|.cache)\""
+  },
+  "author": "Olga",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^2.4.6",
+    "@capacitor/core": "2.4.6",
+    "@types/electron-settings": "^3.1.2",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "2.4.6",
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0"
+  }
+}
