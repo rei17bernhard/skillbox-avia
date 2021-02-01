@@ -1,10 +1,10 @@
-const { Capacitor } = require("@capacitor/core");
+//const { Capacitor } = require("@capacitor/core");
 
 const forms = Array.from(document.querySelectorAll(".content"));
 const resetBtn = document.getElementById("resetApp");
 const isElectron = navigator.userAgent.indexOf("Electron") !== -1;
-const isAndroid = Capacitor.getPlatform() === "android";
-const isIos = Capacitor.getPlatform() === "ios";
+// const isAndroid = Capacitor.getPlatform() === "android";
+// const isIos = Capacitor.getPlatform() === "ios";
 const containers = Array.from(document.querySelectorAll(".js-container"));
 
 //выключает текущий контейнер и включает следующий
@@ -58,9 +58,9 @@ resetBtn.onclick = changeContainer;
 if (isElectron) {
   document.body.classList.add("electron");
 }
-if (isAndroid) {
-  document.body.classList.add("android");
-}
-if (isIos) {
-  document.body.classList.add("ios");
-}
+// if (isAndroid) {
+//   document.body.classList.add("android");
+// }
+// if (isIos) {
+//   document.body.classList.add("ios");
+// }
