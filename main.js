@@ -6,6 +6,6 @@ app.whenReady().then(() => {
     thickFrame: true,
     frame: false,
   });
-  win.loadFile("dist/index.html");
+  win.loadFile("www/index.html");
   //   win.webContents.openDevTools();
 });

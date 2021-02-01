@@ -7,16 +7,16 @@
     "start": "parcel serve src/index.html --public-url ./",
     "build": "parcel build src/index.html --out-dir=www --public-url ./",
     "ionic:build": "parcel build src/index.html --out-dir=www --public-url ./",
-    "ionic:serve": "parcel serve src/index.html --out-dir=www --public-url ./",
-    "serve:android": "ionic cap run android -l --external --host=192.168.1.103",
+    "ionic:serve": "parcel serve src/index.html",
+    "serve:android": "ionic cap run android -l --external",
     "electron:serve": "electron serve.js",
-    "electron:build": "electron-packager . universal --overwrite --ignore=\"(node_modules|src|.cache)\""
+    "electron:build": "electron-packager . universal --overwrite --ignore=\"(node_modules|src|.cache|android|universal-win32-x64)\""
   },
   "author": "Olga",
   "license": "ISC",
   "dependencies": {
     "@capacitor/android": "^2.4.6",
-    "@capacitor/core": "2.4.6",
+    "@capacitor/core": "^2.4.6",
     "@types/electron-settings": "^3.1.2",
     "parcel": "^1.12.4"
   },

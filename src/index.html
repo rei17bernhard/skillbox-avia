@@ -12,15 +12,27 @@
     <div class="app">
       <div class="js-container container container-active">
         <img src="icon/icon-1.svg" class="icon"></img>
-        <div class="heading">Онлайн регистрация на рейс!</div>
-        <form id="form" class="content" action="#">
+        <div class="heading">Онлайн регистрация на рейс</div>
+        <form id="formNumber" class="content" action="#" autocomplete="off">
             <label class="label">
         <div class="label-text">Номер билета</div>
-        <input id="inputTicket" type="text" class="input" placeholder="Введите номер" required/>
+        <input id="ticketNumber" type="number" class="input" placeholder="Введите номер" data-min-len="8" data-max-len="16" required/>
         </label>
-        <button class="button">Отправить</button>
+        <button class="button button-submit" disabled>Отправить</button>
         </form>
-    </div>
+      </div>
+
+      <div class="js-container container code">
+        <img src="icon/icon-3.svg" class="icon"></img>
+        <div class="heading">Онлайн регистрация на рейс</div>
+        <form id="formCode" class="content" action="#" autocomplete="off">
+            <label class="label">
+        <div class="label-text">Проверочный код</div>
+        <input id="ticketCode" type="number" class="input" placeholder="Введите код" data-min-len="4" data-max-len="8" required/>
+        </label>
+        <button class="button button-submit" disabled>Отправить</button>
+        </form>
+      </div>
 
       <div class="js-container container">
         <img src="icon/icon-2.svg" class="icon"></img>
